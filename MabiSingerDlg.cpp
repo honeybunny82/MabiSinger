@@ -476,6 +476,8 @@ void CMabiSingerDlg::OnBtnSend()
 	SendKeycode( 'V', VK_CONTROL );
 	SendKeycode( VK_RETURN );
 
+	// アクティブ復帰
+//	::SetForegroundWindow( m_hWnd );
 
 	// 次の行を選択
 	++iSel;
@@ -522,6 +524,8 @@ void CMabiSingerDlg::OnBtnEnter()
 	// キー送信
 	SendKeycode( VK_RETURN );
 
+	// アクティブ復帰
+//	::SetForegroundWindow( m_hWnd );
 }
 
 // 行クリア
@@ -537,6 +541,8 @@ void CMabiSingerDlg::OnBtnClear()
 	SendKeycode( VK_HOME, VK_SHIFT );
 	SendKeycode( VK_BACK );
 
+	// アクティブ復帰
+//	::SetForegroundWindow( m_hWnd );
 }
 
 // 演奏
@@ -551,6 +557,8 @@ void CMabiSingerDlg::OnBtnPlay()
 	// キー送信
 	SendKeycode( VK_F1 + iSel );
 
+	// アクティブ復帰
+//	::SetForegroundWindow( m_hWnd );
 }
 
 // 停止
@@ -563,6 +571,8 @@ void CMabiSingerDlg::OnBtnStop()
 	// キー送信
 	SendKeycode( VK_ESCAPE );
 
+	// アクティブ復帰
+//	::SetForegroundWindow( m_hWnd );
 }
 
 // 常に最前面
